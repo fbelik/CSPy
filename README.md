@@ -7,6 +7,7 @@ For documentation of Julia package and methods, see the [docs](https://fbelik.gi
 ```bash
 pip install "git+https://github.com/fbelik/CSPy.git"
 ```
+## Method details
 
 This API provides the following methods that interface the Julia package using the interface [juliacall](https://juliapy.github.io/PythonCall.jl/dev/juliacall/). The goal is to allow the user to pass in `np.array` which will be converted to Julia array types and python functions which are converted to Julia functions.
 
@@ -36,3 +37,7 @@ You can also enable this once via environment variable:
 ```bash
 export CSPY_AUTO_INSTALL_JULIA=1
 ```
+
+## Example code
+
+See [test.py](test.py) for an example of generating a pruned quadrature rule.

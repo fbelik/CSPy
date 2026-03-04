@@ -1,4 +1,5 @@
 import CSPy
+CSPy.initialize(True)
 import numpy as np
 
 M = 100000              # Number of MC samples
