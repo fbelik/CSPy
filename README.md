@@ -1,6 +1,9 @@
 # CSPy: Python API for CaratheodoryPruning.jl
 
-For documentation of Julia package and methods, see the [docs](https://fbelik.github.io/CaratheodoryPruning.jl/dev/).
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/fbelik/CaratheodoryPruning.jl)
+[![Docs](https://img.shields.io/badge/Docs-Stable-0A66C2?logo=readthedocs)](https://fbelik.github.io/CaratheodoryPruning.jl/dev/)
+
+For documentation of Julia package and methods, see the CaratheodoryPruning.jl [repository](https://github.com/fbelik/CaratheodoryPruning.jl) and the [docs](https://fbelik.github.io/CaratheodoryPruning.jl/dev/).
 
 ## Install from GitHub
 
