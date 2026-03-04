@@ -16,8 +16,8 @@ This API provides the following methods that interface the Julia package using t
 - `vandermonde_vector(vec, pt)` interfaces to the Julia method `VandermondeVector(vec, pt)`; assumes that both `vec` and `pt` can be converted to Julia vector types.
 
 In order to interface with Julia methods properly, it defines methods for converting between Python and Julia functions:
-- `juliavecfun(pyfun)` converts a function in Python, `pyfun(i)` to a Julia function by reindexing and calling `pyconvert` with `pyfun -> (i-> pyconvert(Float64, pyfun(i-1)))`
-- `juliavanderfun(pyfun)` converts a function in Python, `pyfun(i)` to a Julia function by reindexing and calling `pyconvert` with `pyfun -> (i-> pyconvert(VandermondeVector, pyfun(i-1)))`
+- `_juliavecfun(pyfun)` converts a function in Python, `pyfun(i)` to a Julia function by reindexing and calling `pyconvert` with `pyfun -> (i-> pyconvert(Float64, pyfun(i-1)))`
+- `_juliavanderfun(pyfun)` converts a function in Python, `pyfun(i)` to a Julia function by reindexing and calling `pyconvert` with `pyfun -> (i-> pyconvert(VandermondeVector, pyfun(i-1)))`
 
 For now, all types are converted to `Float64` in Julia, so underlying Python arrays should not be complex valued. 
 
