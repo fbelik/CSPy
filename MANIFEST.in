@@ -1,0 +1,3 @@
+include README.md
+recursive-include CSPy *.toml
+recursive-include CSPy *.json
